@@ -48,14 +48,13 @@ function App() {
     <div className="app-container">
       <div className="header-container">
         <h1 className="main-header">
-          Meet Your Personal
+          料理提案
           <br />
           <span className="highlight">Recipe AI</span>
         </h1>
         <p className="description">
-          Simply type a few ingredients using the format ingredient1,
-          ingredient2, etc., and Recipe AI will generate an all-new recipe on
-          demand...
+          食材からレシピを提案します。下のように食材を入力してください。
+          例）卵、ごはん
         </p>
       </div>
       <form onSubmit={onSubmit} className="form-container">
@@ -65,10 +64,10 @@ function App() {
             className="wide-input"
             id="ingredients"
             name="ingredients"
-            placeholder="Ingredient1, Ingredient2, Ingredient3,...etc"
+            placeholder="食材1, 食材2, 食材3,...etc"
           />
           <button type="submit" className="search-button">
-            Generate
+            提案する
           </button>
         </div>
       </form>
